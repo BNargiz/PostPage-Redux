@@ -17,7 +17,7 @@ const postPageSlice = createSlice({
       console.log("postsFetched action", action);
       // action.payload = { post: {}, comments: [] }
       state.post = action.payload.post;
-      state.comments = [...state.comments, ...action.payload.comments];
+      state.comments = [...action.payload.comments];
       state.loading = false;
     },
   },

@@ -13,8 +13,8 @@ export const fetchPostById = (id) => async (dispatch, getState) => {
 
     const post = postResponse.data;
     const comments = commentResponse.data.rows;
-    console.log(postResponse.data);
-    console.log("comment", commentResponse.data.rows);
+    // console.log(postResponse.data);
+    // console.log("comment", commentResponse.data.rows);
 
     const payload = {
       post,
